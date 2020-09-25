@@ -5,18 +5,19 @@
   </head>
   <body>
     <a-scene>
-	    <a-link position="0 2 -5" href="kitchen.html" image="img/arrow.png"></a-link>
-	    <a-box color="white" position="0 3 -8" rotation="0 45 45" scale="2 2 2"></a-box>
-	    <a-entity link="href: index.html; title: My Homepage; image: #homeThumbnail"></a-entity>
-	    <a-sky src="Pano/Render_Hall_pano_4K.jpg"></a-sky>
 	    <a-entity camera look-controls>
-        <a-cursor
+	    <a-cursor
           id="cursor"
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
           animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
           event-set__mouseenter="_event: mouseenter; color: springgreen"
           event-set__mouseleave="_event: mouseleave; color: black"
           raycaster="objects: .link"></a-cursor>
+	    
+	    <a-box color="white" position="0 3 -8" rotation="0 45 45" scale="1 1 1"></a-box>
+	    <a-sky src="Pano/Render_Hall_pano_4K.jpg"></a-sky>
+	    
+       
     </a-scene>
   </body>
 </html>
