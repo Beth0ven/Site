@@ -5,7 +5,10 @@
   </head>
   <body>
     <a-scene>
-	    <a-entity camera look-controls>
+	    <a-box color="white" position="0 3 -8" rotation="0 45 45" scale="1 1 1"></a-box>
+	    <a-sky src="Pano/Render_Hall_pano_4K.jpg"></a-sky>
+	    
+       <a-entity camera look-controls>
 	    <a-cursor
           id="cursor"
           animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
@@ -13,11 +16,6 @@
           event-set__mouseenter="_event: mouseenter; color: springgreen"
           event-set__mouseleave="_event: mouseleave; color: black"
           raycaster="objects: .link"></a-cursor>
-	    
-	    <a-box color="white" position="0 3 -8" rotation="0 45 45" scale="1 1 1"></a-box>
-	    <a-sky src="Pano/Render_Hall_pano_4K.jpg"></a-sky>
-	    
-       
     </a-scene>
   </body>
 </html>
