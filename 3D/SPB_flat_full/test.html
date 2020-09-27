@@ -8,6 +8,7 @@
     	<script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
   </head>
   <body>
+	  
     <a-scene>
 	    <!--- Кнопки перемещения -->
 	    <a-plane id="but_bedroom" class="link" src="img/arrow.png" link="href: bedroom.html; title: test-title;" 
@@ -19,13 +20,13 @@
 		     event-set__mouseenter="scale: 1.2 1.2 1" event-set__mouseleave="scale: 1 1 1"></a-plane>
 	    
 	    <a-entity geometry="primitive: torus; radius: 1; radiusTubular: 0.1; arc: 360"
-          material="color: blue" 
+          material="color: Aquamarine" 
 	id="but_bathroom" 
 	class="link"
 	link="href: bathroom.html; title: test-title;" 
 	position="-2 -15 -10"
 	rotation="-45 0 0"
-	event-set__mouseenter="scale: 1.2 1.2 1"
+	event-set__mouseenter="scale: 1.2 1.2 1; color: Aqua"
 	event-set__mouseleave="scale: 1 1 1"></a-entity> 
 
 	    <!--- Изображение 360 -->
